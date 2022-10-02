@@ -1,0 +1,39 @@
+﻿<Window x:Class="geometria.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:geometria"
+        mc:Ignorable="d"
+        Title="Window1" Height="480" Width="546">
+    <Grid Margin="0,0,-34,-6" RenderTransformOrigin="0.485,0.494">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="453*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="s1" HorizontalAlignment="Left" Margin="170,274,0,0" VerticalAlignment="Top" Height="116" Width="133" Click="_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image4.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name ="A" HorizontalAlignment="Left" Margin="61,10,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="38" Height="18"/>
+        <TextBox x:Name ="B" HorizontalAlignment="Left" Margin="157,10,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Width="42" Height="18"/>
+        <TextBlock x:Name="Wynik" HorizontalAlignment="Left" Margin="291,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" Height="16"/>
+        <Button x:Name="C" Content="Clear" HorizontalAlignment="Left" Margin="356,274,0,0" VerticalAlignment="Top" Click="C_Click" Height="36" Width="53" Background="#FFB82121"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="18,422,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="20" Width="40"/>
+        <Label Content="Wynik" HorizontalAlignment="Left" Margin="243,7,0,0" VerticalAlignment="Top" Height="26" Width="43"/>
+        <Label Content="a" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Height="26" Width="16"/>
+        <Label Content="h" HorizontalAlignment="Left" Margin="124,7,0,0" VerticalAlignment="Top" Height="26" Width="17"/>
+        <Button x:Name="s2" HorizontalAlignment="Left" Margin="18,274,0,0" VerticalAlignment="Top" Click="_2" Height="115" Width="140">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image3.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="siny" HorizontalAlignment="Left" Margin="160,75,0,0" TextWrapping="Wrap" Text="siny" VerticalAlignment="Top" Width="36" Height="22"/>
+        <Button x:Name="Wynik1" Content="Wynik" HorizontalAlignment="Left" Margin="355,335,0,0" VerticalAlignment="Top" Click="Wynik1_Click" Height="20" Width="37" Background="#FF1E37D7"/>
+        <TextBox x:Name="operacja" HorizontalAlignment="Left" Margin="243,48,0,0" TextWrapping="Wrap" Text="Operacja" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Label Content="siny" HorizontalAlignment="Left" Margin="124,71,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
+
+    </Grid>
+</Window>
