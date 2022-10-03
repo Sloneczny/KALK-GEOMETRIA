@@ -40,6 +40,9 @@ namespace geometria
             Wynik.Text = String.Empty;
             siny.Text = String.Empty;
 
+
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -51,6 +54,9 @@ namespace geometria
 
         }
       
+      
+       
+     
 
         private void C_Click(object sender, RoutedEventArgs e)
         {
