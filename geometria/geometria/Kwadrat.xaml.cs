@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,9 +20,26 @@ namespace geometria
     /// </summary>
     public partial class Kwadrat : Window
     {
+        private enum OperationK
+        { 
+            Obwód,
+            Pole1,
+            Pole2,
+            Przyprostokatna
+        
+        
+        }
+        private OperationK operationK;
+
         public Kwadrat()
         {
             InitializeComponent();
+            a.Text=String.Empty;
+            d.Text = String.Empty;
+            wynik.Text = String.Empty;
+            operacja.Text = "operacja";
+
+                
         }
 
         
@@ -31,6 +49,93 @@ namespace geometria
             MainWindow w = new MainWindow();
             this.Visibility = Visibility.Hidden;
             w.Show();
+        }
+
+        private void ob_Click(object sender, RoutedEventArgs e)
+        {
+            operationK = OperationK.Obwód;
+            operacja.Text = "Liczenie obwodu kwadratu";
+
+        }
+
+        private void pole1_Click(object sender, RoutedEventArgs e)
+        {
+            operationK = OperationK.Pole1;
+            operacja.Text = "Licznie pola ze wzoru";
+        }
+
+        private void pole2_Click(object sender, RoutedEventArgs e)
+        {
+            operationK = OperationK.Pole2;
+            operacja.Text = "Licznie pola ze wzoru2";
+        }
+
+        private void przyprostokatna_Click(object sender, RoutedEventArgs e)
+        {
+            operationK = OperationK.Przyprostokatna;
+            operacja.Text = "Liczenie długości przekątnej kwadratu:";
+        }
+
+        private void result_Click(object sender, RoutedEventArgs e)
+        {
+            double first, secound, result;
+            bool valid1 = double.TryParse(a.Text, out first);
+           
+            bool valid2 = double.TryParse(d.Text, out secound);
+            
+            switch (operationK)
+            { 
+                case OperationK.Pole1:
+                    result = first * first;
+                    wynik.Text= "P= " + $"{result}";
+                    if(!valid1)
+                    {
+                        wynik.Text = "podaj A";
+                    }
+                    
+                    break;
+
+                case OperationK.Pole2:
+                    result = secound * secound / 2;
+                    
+                    wynik.Text = "P= " + $"{result}";
+                    if (!valid2)
+                    {
+                        wynik.Text = "podaj D";
+                    }
+
+
+                    break;
+
+                case OperationK.Obwód:
+                    result = 4 * first;
+                    
+                    wynik.Text ="OB= " + $"{result}";
+                    if (!valid1)
+                    {
+                        wynik.Text = "podaj A";
+                    }
+
+
+                    break;
+
+                case OperationK.Przyprostokatna:
+                    result = first * Math.Sqrt(2);
+                    
+                    wynik.Text =  "D= " + $"{result}";
+                    if (!valid1)
+                    {
+                        wynik.Text = "podaj A";
+                    }
+
+
+                    break;  
+                    
+
+
+            }
+
+
         }
     }
 }

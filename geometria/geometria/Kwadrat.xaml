@@ -7,7 +7,47 @@
         mc:Ignorable="d"
         Title="Kwadrat" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="234,191,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/B17.jpg"/>
+        </Grid.Background>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="51,375,0,0" VerticalAlignment="Top" Click="Button_Click" FontFamily="Arial Black" FontSize="20" Background="#FF0335F6"/>
+        <Button x:Name="ob"  HorizontalAlignment="Left" Margin="51,274,0,0" VerticalAlignment="Top" Click="ob_Click" Width="98" Height="61">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image7.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="pole1"  HorizontalAlignment="Left" Margin="199,274,0,0" VerticalAlignment="Top" Click="pole1_Click" Width="98" Height="61">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image8.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="pole2"  HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Click="pole2_Click" Width="98" Height="61">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image9.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="przyprostokatna"  HorizontalAlignment="Left" Margin="510,274,0,0" VerticalAlignment="Top" Click="przyprostokatna_Click" Width="98" Height="61">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image10.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="d" HorizontalAlignment="Left" Height="20" Margin="351,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="38" Background="#FF928F8F" FontWeight="Bold" FontFamily="Arial Black" FontSize="20" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.166"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="a" HorizontalAlignment="Left" Height="20" Margin="351,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="38" Background="#FF928F8F" FontWeight="Bold" FontFamily="Arial Black" FontSize="20" UseLayoutRounding="False"/>
+        <TextBlock x:Name="wynik" HorizontalAlignment="Left" Margin="510,136,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18"/>
+        <TextBlock x:Name="operacja" HorizontalAlignment="Left" Margin="510,171,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18"/>
+        <Button x:Name="result" Content="Wynik" HorizontalAlignment="Left" Margin="682,255,0,0" VerticalAlignment="Top" Click="result_Click" FontFamily="Arial Black" FontSize="20" Background="#FFF90D0D"/>
+        <Image Source="/Image5.png" Margin="23,30,574,216" SnapsToDevicePixels="True" IsHitTestVisible="False" />
+        <TextBlock HorizontalAlignment="Left" Margin="251,45,0,0" TextWrapping="Wrap" Text="Liczba D" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,106,0,0" TextWrapping="Wrap" Text="Liczba A" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16"/>
 
     </Grid>
 </Window>
