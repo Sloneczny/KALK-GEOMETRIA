@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Window1" Height="480" Width="546">
     <Grid Margin="0,0,-34,-6" RenderTransformOrigin="0.485,0.494">
+        <Grid.Background>
+            <ImageBrush ImageSource="/B17.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="453*"/>
             <ColumnDefinition Width="127*"/>

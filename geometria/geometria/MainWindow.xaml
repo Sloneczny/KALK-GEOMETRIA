@@ -7,14 +7,29 @@
         mc:Ignorable="d"
         Title="Geometria" Height="405" Width="594">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/tlo-fotograficzne-jakie-wybrac.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="71*"/>
             <ColumnDefinition Width="467*"/>
             <ColumnDefinition Width="56*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Trojkat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="126" Width="142" Click="Trojkat" Background="#FFCB0F0F" FontFamily="Arial Black" Grid.ColumnSpan="2"/>
-        <Button Content="Kwadrat"  HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" Background="#FF2045B8" FontFamily="Arial Black" Height="127" Click="Kwadrat" Width="128" Grid.Column="1"/>
-        <Button Content="Prostokąt"  HorizontalAlignment="Left" Margin="226,11,0,0" VerticalAlignment="Top" Background="#FF37C21E" FontFamily="Arial Black" Height="126" Click="Prostokat" Width="129" Grid.Column="1"/>
+        <Button Content="Trojkat" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Center" Height="123" Width="142" Click="Trojkat" FontFamily="Arial Black" Grid.ColumnSpan="2" FontSize="20" FontWeight="Bold" Foreground="#FFFF0404">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button Content="Kwadrat"  HorizontalAlignment="Left" Margin="143,0,0,0" VerticalAlignment="Center" FontFamily="Arial Black" Height="123" Click="Kwadrat" Width="128" Grid.Column="1" Foreground="#FFEB1010" FontSize="20">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button Content="Prostokąt"  HorizontalAlignment="Left" Margin="276,0,0,0" VerticalAlignment="Center" FontFamily="Arial Black" Height="122" Click="Prostokat" Width="129" Grid.Column="1" Foreground="#FFFF0404" FontSize="20">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

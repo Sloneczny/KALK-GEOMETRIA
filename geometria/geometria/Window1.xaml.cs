@@ -27,8 +27,6 @@ namespace geometria
             Wzor1,
             Wzor2
             
-
-
         }
         private OperationType operationType;
         public Window1()
