@@ -87,7 +87,7 @@ namespace geometria
             { 
                 case OperationK.Pole1:
                     result = first * first;
-                    wynik.Text= "P= " + $"{result}";
+                    wynik.Text=  $" P = {result}";
                     if(!valid1)
                     {
                         wynik.Text = "podaj A";
@@ -98,7 +98,7 @@ namespace geometria
                 case OperationK.Pole2:
                     result = secound * secound / 2;
                     
-                    wynik.Text = "P= " + $"{result}";
+                    wynik.Text = $"P={result}";
                     if (!valid2)
                     {
                         wynik.Text = "podaj D";
@@ -110,7 +110,7 @@ namespace geometria
                 case OperationK.Obwód:
                     result = 4 * first;
                     
-                    wynik.Text ="OB= " + $"{result}";
+                    wynik.Text = $"OB= {result}";
                     if (!valid1)
                     {
                         wynik.Text = "podaj A";
@@ -122,7 +122,7 @@ namespace geometria
                 case OperationK.Przyprostokatna:
                     result = first * Math.Sqrt(2);
                     
-                    wynik.Text =  "D= " + $"{result}";
+                    wynik.Text =   $"D= {result}";
                     if (!valid1)
                     {
                         wynik.Text = "podaj A";
