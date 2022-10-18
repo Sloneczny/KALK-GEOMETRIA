@@ -22,6 +22,12 @@
             </Button.Background>
         </Button>
         <Button x:Name="pole2"  HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Click="pole2_Click" Width="98" Height="61">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
             <Button.Background>
                 <ImageBrush ImageSource="/Image9.png" Stretch="Fill"/>
             </Button.Background>

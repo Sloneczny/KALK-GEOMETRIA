@@ -87,11 +87,12 @@ namespace geometria
             { 
                 case OperationK.Pole1:
                     result = first * first;
-                    wynik.Text=  $" P = {result}";
+                    wynik.Text =  $" P = {result}";
                     if(!valid1)
                     {
                         wynik.Text = "podaj A";
                     }
+                    operacja.Text = $" {first} * {first} = {result}" ;
                     
                     break;
 
